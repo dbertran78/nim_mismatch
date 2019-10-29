@@ -5,12 +5,12 @@ The mitochondrial chromosome have a different name. To correct:
 ```sed 's/>MT/>M/' DATA/human_g1k_v37.fasta > DATA/human_g1k_v37_M.fasta```
 
 
-Both sript only take into account read in proper pair.
+Both sript only take into account only reads in proper pair.
 
-Fast computation of the number of mismatches using the cigar string operation and NM tag
+Fast computation of the number of mismatches using the cigar string operation and the NM tag.
 
 ```nim compile --run get_mismatch_statistics.nim --bam=DATA/C1000.bam  --ref=DATA/human_g1k_v37_M.fasta```
 
-Compute the type of mismatches and create a sam file with th '=' and 'X' cigar string operation
+Compute the type of mismatches and create a sam file with th '=' and 'X' cigar string operation.
 
 ```nim compile --run update_bam.nim --bam=DATA/C1000.bam  --new-sam=update_cigar.sam --ref=DATA/human_g1k_v37_M.fasta```
