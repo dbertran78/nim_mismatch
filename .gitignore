@@ -1,0 +1,6 @@
+get_mismatch_statistics
+update_bam
+DATA/
+*bam
+*sam
+*~
