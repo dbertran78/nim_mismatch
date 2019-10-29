@@ -13,4 +13,4 @@ Fast computation of the number of mismatches using the cigar string operation an
 
 Compute the type of mismatches and create a sam file with th '=' and 'X' cigar string operation
 
-```nim compile --run update_bam.nim --bam=DATA/C1000.bam  --new-sam=gg.sam --ref=DATA/human_g1k_v37_M.fasta```
+```nim compile --run update_bam.nim --bam=DATA/C1000.bam  --new-sam=update_cigar.sam --ref=DATA/human_g1k_v37_M.fasta```
